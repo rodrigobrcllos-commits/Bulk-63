@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="BULK 63">
+<meta name="theme-color" content="#0e0f14">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAEoElEQVR42u3dS3YTMRAFUK8AJmwnYzbGMlkAu0gOYyC43frVq6tz3jSO2zcVuSVVPx7GkvH288e7q2Aci3NVXG2jLF7IjXi8kBttEMNtxCKGG+J2oQBksA2I/5YvX7/BbZwL+TfQ2QEb5JJwT4JOUyDkExGvxk1XYcyVAK8ETlkhyEmIZ+OmDmSwjXmYOyKehZtGkME27mEGdg1sSkEGG2aQK8CmF2aoYQb5dNgwwww1yAI2zAI1zAL1MMwA5cCGGRqoYRaoYRaoYZaGqGGGOgY0zFDHoIYZ6hjUMEsMapglBjXMEoUaZrmLGmaBGmaBGmjpABpmiUENs0Shhllmo1adRZVWnaV1lYZZYlCbakjU1ANmianSMEsUaqAlBjTMEoUaaIkBDbNEoQZaWoH2IezLr/fvf6QDatW5CeYU4NOqNMz1QVeFPRx0QnW++qFXAlL1995WpYHOBF0F9XLQif+Wu4BOQd3uy2AH0Mnz6mFVOuXLYCrmTndBgAb68jWIBp107xno565F9LQj6d4z0D1QAw10D9BpS90wZ6B+edoBdD7oz65LO9Dp+x1Gga66KBM37QD6NdDVqn7itAPoAfiqTmdagE7cKjoL3Mwl9VWo4qcdQD8HbTbmVbCABnp5gAY6CvRMYEADHYM6fsUw9TDsyfh2oo7fH516GLZCFd2BOv4UC9B7pwQrQbc4lgX0/vnt7j+eqPYGQJ//ZW3Ea3ZobwB0kdtpd1+7S78OoAut4r36+klbYoEOBD1qG2tsizCgs6p050aOQBeu0h1P3wAduvTd9SgZ0Iftvxj187qeiQR60vxzxd2H0aBbdPdPbmq+CvSOVcJukJ9FrUIfsgtuxTGwFhXaHLrWfg5zaKBL3f5adbYRaKCP2aQ06r0BDfQxoK0UAh21685eDqDbgbbbDuhI0PZDA310M5gZm/yBBrocaGcKgT52C6lT30ADrS+HzklAF300BdBAa9YIdJnbdrqPAh3VygBooIEGGugKmFuA9hSs3GXvhC+FHutWFPTuM4xAA10Kc5vphmd99+gPXRG0h9fr4N9quvFP0GnTjtOfVrX6P0GLFUKga7YCA3oQ6EqoPacwH/N/QSdVaZjrH5S9jRnoDMwprQyWgK6COhny3QaOcfufO1Tp5KrcoWvSMMwpVTp5etEdM9ALMJ44R0493X0ZdPLh2YSkN2Ycjjn58Gwn0IkNGV8GrUrXQ92mS/8s0FBLmeoMtMSBhlqiMAMtcaChlijMQEscaKglCvOzoKGW0ZingValJaY6Qy2RmE09JGKqoUpLZHVWpSWuOkMtcZihljjMQEscaKglCjPUEof5CmioYS4BGmqJwgy1xGGGWuIwQw1zHGaoYY7DfBU01H0wlwUNNcxRmKGGOQ4z1DDHYYYa5kfquHohwK4NORoz1DBDDTXMYAvIUAvMe1GDfQ5kmKGGGWqwT4MMM9ggQw32SZBhBhtkYyzqzrhHXTsKwQbZWAs7DffI60JZYdRVgc+6BnQFwj4V98z3S1MT2Dugr3w/9IB9+Q/gxN+LFrjLhwqwQTbghtiAG2IDboiNwsh9KkZZ5K72tfEBrVWFPk9zArkAAAAASUVORK5CYII=">
+<title>BULK 63 · Plano Academia</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0e0f14;
+  --card: #161820;
+  --card2: #1d1f2a;
+  --border: #272a38;
+  --text: #eceef5;
+  --muted: #5a5f78;
+  --muted2: #7a7f98;
+  --green: #3ddc84;
+  --yellow: #f5c542;
+  --red: #ff6b5b;
+  --blue: #5b8cff;
+  --safe-top: env(safe-area-inset-top, 44px);
+  --safe-bot: env(safe-area-inset-bottom, 34px);
+}
+
+- { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color: transparent; }
+
+html, body {
+height: 100%;
+overflow: hidden;
+background: var(–bg);
+color: var(–text);
+font-family: ‘DM Sans’, sans-serif;
+}
+
+/* SHELL */
+.app-shell {
+display: flex;
+flex-direction: column;
+height: 100%;
+max-width: 430px;
+margin: 0 auto;
+}
+
+/* SCREENS */
+.screens {
+flex: 1;
+overflow: hidden;
+position: relative;
+}
+
+.screen {
+position: absolute;
+inset: 0;
+overflow-y: auto;
+-webkit-overflow-scrolling: touch;
+padding-top: calc(var(–safe-top) + 12px);
+padding-bottom: 16px;
+display: none;
+opacity: 0;
+transform: translateY(10px);
+transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.screen.active {
+display: block;
+opacity: 1;
+transform: translateY(0);
+}
+
+/* BOTTOM NAV */
+.bottom-nav {
+display: flex;
+background: rgba(14,15,20,0.95);
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+border-top: 1px solid var(–border);
+padding-bottom: var(–safe-bot);
+flex-shrink: 0;
+}
+
+.nav-btn {
+flex: 1;
+padding: 10px 4px 8px;
+background: none;
+border: none;
+cursor: pointer;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 4px;
+transition: transform 0.1s;
+}
+
+.nav-btn:active { transform: scale(0.88); }
+
+.nav-icon {
+width: 26px;
+height: 26px;
+border-radius: 8px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 16px;
+transition: background 0.2s;
+}
+
+.nav-btn.active .nav-icon {
+background: rgba(255,255,255,0.1);
+}
+
+.nav-label {
+font-size: 10px;
+font-weight: 600;
+letter-spacing: 0.3px;
+color: var(–muted);
+text-transform: uppercase;
+transition: color 0.2s;
+}
+
+.nav-btn.active .nav-label {
+color: var(–text);
+}
+
+/* === HOME SCREEN === */
+.home-header {
+padding: 4px 20px 20px;
+}
+
+.home-greeting {
+font-size: 13px;
+color: var(–muted2);
+font-weight: 400;
+letter-spacing: 0.3px;
+}
+
+.home-title {
+font-family: ‘Syne’, sans-serif;
+font-size: 30px;
+font-weight: 800;
+line-height: 1.1;
+margin-top: 4px;
+}
+
+.home-title .accent { color: var(–green); }
+
+.today-banner {
+margin: 0 16px 16px;
+background: linear-gradient(135deg, #1a2e20 0%, #0e1f16 100%);
+border: 1px solid rgba(61,220,132,0.2);
+border-radius: 20px;
+padding: 18px 20px;
+position: relative;
+overflow: hidden;
+}
+
+.today-banner::after {
+content: ‘’;
+position: absolute;
+right: -20px;
+top: -20px;
+width: 100px;
+height: 100px;
+border-radius: 50%;
+background: radial-gradient(circle, rgba(61,220,132,0.12) 0%, transparent 70%);
+}
+
+.today-label {
+font-size: 11px;
+text-transform: uppercase;
+letter-spacing: 1.5px;
+color: var(–green);
+font-weight: 700;
+margin-bottom: 6px;
+}
+
+.today-day {
+font-family: ‘Syne’, sans-serif;
+font-size: 24px;
+font-weight: 800;
+color: var(–text);
+line-height: 1;
+}
+
+.today-type {
+font-size: 13px;
+color: rgba(255,255,255,0.5);
+margin-top: 4px;
+}
+
+.today-badge {
+display: inline-flex;
+align-items: center;
+gap: 5px;
+background: rgba(61,220,132,0.15);
+color: var(–green);
+border-radius: 100px;
+padding: 4px 10px;
+font-size: 12px;
+font-weight: 600;
+margin-top: 10px;
+}
+
+/* KCAL RING */
+.kcal-ring-wrap {
+margin: 0 16px 16px;
+background: var(–card);
+border: 1px solid var(–border);
+border-radius: 20px;
+padding: 20px;
+display: flex;
+align-items: center;
+gap: 20px;
+}
+
+.ring-svg { flex-shrink: 0; }
+
+.ring-bg { fill: none; stroke: var(–border); stroke-width: 8; }
+.ring-p { fill: none; stroke: var(–green); stroke-width: 8; stroke-linecap: round;
+stroke-dasharray: 188.5; stroke-dashoffset: 150; transform: rotate(-90deg); transform-origin: 50% 50%;
+transition: stroke-dashoffset 1s ease; }
+.ring-c { fill: none; stroke: var(–yellow); stroke-width: 8; stroke-linecap: round;
+stroke-dasharray: 188.5; stroke-dashoffset: 188.5; transform: rotate(-90deg); transform-origin: 50% 50%; }
+.ring-f { fill: none; stroke: var(–red); stroke-width: 8; stroke-linecap: round;
+stroke-dasharray: 188.5; stroke-dashoffset: 188.5; transform: rotate(-90deg); transform-origin: 50% 50%; }
+
+.ring-center {
+position: absolute;
+inset: 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.ring-wrap { position: relative; width: 90px; height: 90px; }
+
+.ring-num {
+font-family: ‘Syne’, sans-serif;
+font-size: 20px;
+font-weight: 800;
+line-height: 1;
+color: var(–text);
+}
+
+.ring-unit { font-size: 10px; color: var(–muted2); margin-top: 1px; }
+
+.macro-legend { flex: 1; display: flex; flex-direction: column; gap: 10px; }
+
+.legend-row {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.legend-left { display: flex; align-items: center; gap: 8px; }
+
+.legend-dot {
+width: 8px; height: 8px;
+border-radius: 50%;
+flex-shrink: 0;
+}
+
+.legend-name { font-size: 13px; color: var(–muted2); font-weight: 500; }
+
+.legend-val {
+font-family: ‘Syne’, sans-serif;
+font-size: 15px;
+font-weight: 700;
+}
+
+.legend-mini { font-size: 11px; color: var(–muted); margin-top: 1px; }
+
+/* QUICK CARDS */
+.quick-grid {
+margin: 0 16px 16px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 10px;
+}
+
+.qcard {
+background: var(–card);
+border: 1px solid var(–border);
+border-radius: 18px;
+padding: 16px;
+cursor: pointer;
+transition: transform 0.15s, background 0.15s;
+-webkit-tap-highlight-color: transparent;
+}
+
+.qcard:active { transform: scale(0.96); background: var(–card2); }
+
+.qcard-icon { font-size: 22px; margin-bottom: 8px; }
+.qcard-label { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(–muted); font-weight: 600; }
+.qcard-val { font-family: ‘Syne’, sans-serif; font-size: 20px; font-weight: 800; color: var(–text); margin-top: 2px; }
+.qcard-sub { font-size: 11px; color: var(–muted); margin-top: 2px; }
+
+/* SECTION HEADER */
+.sec-head {
+padding: 4px 20px 12px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.sec-title {
+font-family: ‘Syne’, sans-serif;
+font-size: 18px;
+font-weight: 700;
+}
+
+/* === MEALS SCREEN === */
+.meals-scroll {
+padding: 0 16px;
+}
+
+.meal-card {
+background: var(–card);
+border: 1px solid var(–border);
+border-radius: 18px;
+margin-bottom: 10px;
+overflow: hidden;
+transition: border-color 0.2s;
+}
+
+.meal-card.current { border-color: var(–green); }
+
+.meal-top {
+padding: 14px 16px;
+display: flex;
+align-items: center;
+gap: 12px;
+cursor: pointer;
+}
+
+.meal-emoji-wrap {
+width: 42px; height: 42px;
+border-radius: 12px;
+background: var(–card2);
+display: flex; align-items: center; justify-content: center;
+font-size: 20px;
+flex-shrink: 0;
+}
+
+.meal-card.current .meal-emoji-wrap {
+background: rgba(61,220,132,0.12);
+}
+
+.meal-info { flex: 1; min-width: 0; }
+
+.meal-time-tag {
+font-size: 11px;
+color: var(–muted2);
+font-weight: 500;
+text-transform: uppercase;
+letter-spacing: 0.5px;
+}
+
+.meal-title {
+font-family: ‘Syne’, sans-serif;
+font-size: 16px;
+font-weight: 700;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+
+.meal-kcal-badge {
+font-size: 12px;
+font-weight: 700;
+color: var(–yellow);
+background: rgba(245,197,66,0.1);
+padding: 3px 9px;
+border-radius: 100px;
+flex-shrink: 0;
+}
+
+.meal-expand {
+border-top: 1px solid var(–border);
+padding: 12px 16px;
+display: none;
+}
+
+.meal-expand.open { display: block; }
+
+.food-row {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 7px 0;
+border-bottom: 1px solid rgba(255,255,255,0.04);
+font-size: 14px;
+}
+
+.food-row:last-child { border-bottom: none; }
+
+.food-name { color: var(–text); }
+.food-qty { color: var(–muted2); font-size: 13px; font-weight: 500; }
+
+.meal-macros-row {
+display: flex;
+gap: 6px;
+margin-top: 10px;
+}
+
+.mac-tag {
+flex: 1;
+text-align: center;
+padding: 6px 4px;
+border-radius: 10px;
+font-size: 11px;
+font-weight: 600;
+}
+
+.mac-p { background: rgba(61,220,132,0.1); color: var(–green); }
+.mac-c { background: rgba(245,197,66,0.1); color: var(–yellow); }
+.mac-k { background: rgba(255,255,255,0.05); color: var(–muted2); }
+
+.rot-note {
+background: rgba(255,107,91,0.08);
+border-radius: 8px;
+padding: 8px 10px;
+font-size: 12px;
+color: #ff9a8e;
+font-weight: 500;
+margin-top: 8px;
+border: 1px solid rgba(255,107,91,0.15);
+}
+
+/* === TRAINING SCREEN === */
+.train-screen-pad { padding: 0 16px; }
+
+.cardio-banner {
+background: linear-gradient(135deg, #1a1f35 0%, #0e1220 100%);
+border: 1px solid rgba(91,140,255,0.2);
+border-radius: 20px;
+padding: 18px;
+margin-bottom: 12px;
+}
+
+.cardio-banner-head {
+display: flex;
+align-items: center;
+gap: 10px;
+margin-bottom: 14px;
+}
+
+.cardio-banner-icon {
+width: 36px; height: 36px;
+background: rgba(91,140,255,0.15);
+border-radius: 10px;
+display: flex; align-items: center; justify-content: center;
+font-size: 18px;
+}
+
+.cardio-banner-title {
+font-family: ‘Syne’, sans-serif;
+font-size: 17px;
+font-weight: 700;
+color: var(–blue);
+}
+
+.cardio-stats-row {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 8px;
+}
+
+.cs-box {
+background: rgba(255,255,255,0.04);
+border-radius: 10px;
+padding: 10px 8px;
+text-align: center;
+}
+
+.cs-val {
+font-family: ‘Syne’, sans-serif;
+font-size: 20px;
+font-weight: 800;
+color: var(–blue);
+line-height: 1;
+}
+
+.cs-lbl {
+font-size: 10px;
+color: var(–muted);
+text-transform: uppercase;
+letter-spacing: 0.5px;
+margin-top: 3px;
+}
+
+.day-card {
+background: var(–card);
+border: 1px solid var(–border);
+border-radius: 18px;
+padding: 16px;
+margin-bottom: 10px;
+display: flex;
+align-items: center;
+gap: 14px;
+}
+
+.day-card.today { border-color: var(–yellow); }
+.day-card.rest-day { opacity: 0.5; }
+
+.day-pill {
+width: 48px; height: 48px;
+border-radius: 14px;
+background: var(–card2);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+flex-shrink: 0;
+}
+
+.day-card.today .day-pill { background: var(–yellow); }
+
+.day-pill-name {
+font-family: ‘Syne’, sans-serif;
+font-size: 14px;
+font-weight: 800;
+color: var(–text);
+line-height: 1;
+}
+
+.day-card.today .day-pill-name { color: #1a1a0a; }
+
+.day-pill-type {
+font-size: 8px;
+text-transform: uppercase;
+letter-spacing: 0.5px;
+color: var(–muted);
+margin-top: 2px;
+}
+
+.day-card.today .day-pill-type { color: rgba(26,26,10,0.6); }
+
+.day-info { flex: 1; }
+
+.day-type-label {
+font-size: 10px;
+text-transform: uppercase;
+letter-spacing: 1px;
+color: var(–muted);
+font-weight: 600;
+}
+
+.day-name {
+font-family: ‘Syne’, sans-serif;
+font-size: 17px;
+font-weight: 800;
+line-height: 1.15;
+margin-top: 1px;
+}
+
+.day-tags { display: flex; gap: 5px; flex-wrap: wrap; margin-top: 6px; }
+
+.dtag {
+font-size: 11px;
+background: rgba(255,255,255,0.05);
+color: var(–muted2);
+padding: 3px 8px;
+border-radius: 100px;
+font-weight: 500;
+}
+
+/* === MACROS SCREEN === */
+.macros-screen-pad { padding: 0 16px; }
+
+.big-kcal-card {
+background: var(–card);
+border: 1px solid var(–border);
+border-radius: 20px;
+padding: 22px;
+margin-bottom: 12px;
+text-align: center;
+}
+
+.bk-num {
+font-family: ‘Syne’, sans-serif;
+font-size: 64px;
+font-weight: 800;
+line-height: 1;
+background: linear-gradient(135deg, var(–text) 0%, var(–muted2) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.bk-unit { font-size: 14px; color: var(–muted2); margin-top: 2px; }
+
+.bk-surplus {
+display: inline-block;
+background: rgba(61,220,132,0.12);
+color: var(–green);
+border-radius: 100px;
+padding: 5px 14px;
+font-size: 13px;
+font-weight: 600;
+margin-top: 10px;
+}
+
+.macro-detail-card {
+background: var(–card);
+border: 1px solid var(–border);
+border-radius: 18px;
+padding: 18px;
+margin-bottom: 10px;
+}
+
+.mdc-top {
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 14px;
+}
+
+.mdc-left { display: flex; align-items: center; gap: 10px; }
+
+.mdc-icon {
+width: 38px; height: 38px;
+border-radius: 11px;
+display: flex; align-items: center; justify-content: center;
+font-size: 18px;
+}
+
+.mdc-name { font-family: ‘Syne’, sans-serif; font-size: 16px; font-weight: 700; }
+.mdc-sub { font-size: 12px; color: var(–muted2); margin-top: 1px; }
+.mdc-grams { font-family: ‘Syne’, sans-serif; font-size: 28px; font-weight: 800; line-height: 1; }
+.mdc-kcal { font-size: 12px; color: var(–muted); text-align: right; margin-top: 2px; }
+
+.mdc-bar-track {
+height: 6px;
+background: var(–border);
+border-radius: 100px;
+overflow: hidden;
+}
+
+.mdc-bar-fill {
+height: 100%;
+border-radius: 100px;
+}
+
+.mdc-pct { font-size: 11px; color: var(–muted); text-align: right; margin-top: 6px; }
+
+/* GOAL CARDS */
+.goal-cards { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
+
+.gc {
+background: var(–card);
+border: 1px solid var(–border);
+border-radius: 14px;
+padding: 14px 16px;
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.gc-emoji { font-size: 20px; }
+.gc-text { font-size: 14px; color: var(–muted2); font-weight: 500; line-height: 1.3; }
+
+/* INSTALL BANNER */
+.install-banner {
+margin: 0 16px 16px;
+background: linear-gradient(135deg, #1f1a2e 0%, #150e20 100%);
+border: 1px solid rgba(91,140,255,0.25);
+border-radius: 18px;
+padding: 16px;
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.install-icon { font-size: 28px; flex-shrink: 0; }
+
+.install-text h4 {
+font-family: ‘Syne’, sans-serif;
+font-size: 14px;
+font-weight: 700;
+color: var(–blue);
+margin-bottom: 3px;
+}
+
+.install-text p {
+font-size: 12px;
+color: var(–muted2);
+line-height: 1.4;
+}
+
+.install-close {
+background: none;
+border: none;
+color: var(–muted);
+font-size: 18px;
+cursor: pointer;
+padding: 4px;
+margin-left: auto;
+flex-shrink: 0;
+}
+
+/* Misc */
+@keyframes fadeSlide {
+from { opacity: 0; transform: translateY(8px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+.animated { animation: fadeSlide 0.3s ease both; }
+</style>
+
+</head>
+<body>
+
+<div class="app-shell">
+  <div class="screens">
+
+```
+<!-- ===== HOME ===== -->
+<div class="screen active" id="screen-home">
+
+  <div class="install-banner" id="install-banner">
+    <div class="install-icon">📲</div>
+    <div class="install-text">
+      <h4>Adicionar à tela inicial</h4>
+      <p>Safari → botão compartilhar → "Adicionar à Tela de Início"</p>
+    </div>
+    <button class="install-close" onclick="document.getElementById('install-banner').remove()">✕</button>
+  </div>
+
+  <div class="home-header">
+    <div class="home-greeting" id="greeting">Bom dia 👋</div>
+    <div class="home-title">BULK <span class="accent">63KG</span></div>
+  </div>
+
+  <div class="today-banner">
+    <div class="today-label">HOJE</div>
+    <div class="today-day" id="today-day-name">—</div>
+    <div class="today-type" id="today-day-type">—</div>
+    <div class="today-badge" id="today-badge">⚡ Carregando…</div>
+  </div>
+
+  <div class="kcal-ring-wrap">
+    <div class="ring-wrap">
+      <svg class="ring-svg" width="90" height="90" viewBox="0 0 90 90">
+        <circle class="ring-bg" cx="45" cy="45" r="30"/>
+        <circle class="ring-p" cx="45" cy="45" r="30" id="ring-p"/>
+      </svg>
+      <div class="ring-center">
+        <div class="ring-num">2.760</div>
+        <div class="ring-unit">kcal</div>
+      </div>
+    </div>
+    <div class="macro-legend">
+      <div class="legend-row">
+        <div class="legend-left">
+          <div class="legend-dot" style="background:var(--green)"></div>
+          <div>
+            <div class="legend-name">Proteína</div>
+            <div class="legend-mini">2,2 g/kg</div>
+          </div>
+        </div>
+        <div>
+          <div class="legend-val" style="color:var(--green)">139g</div>
+        </div>
+      </div>
+      <div class="legend-row">
+        <div class="legend-left">
+          <div class="legend-dot" style="background:var(--yellow)"></div>
+          <div>
+            <div class="legend-name">Carbs</div>
+            <div class="legend-mini">59% kcal</div>
+          </div>
+        </div>
+        <div>
+          <div class="legend-val" style="color:var(--yellow)">410g</div>
+        </div>
+      </div>
+      <div class="legend-row">
+        <div class="legend-left">
+          <div class="legend-dot" style="background:var(--red)"></div>
+          <div>
+            <div class="legend-name">Gordura</div>
+            <div class="legend-mini">1,0 g/kg</div>
+          </div>
+        </div>
+        <div>
+          <div class="legend-val" style="color:var(--red)">63g</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="quick-grid">
+    <div class="qcard" onclick="goTo('meals')">
+      <div class="qcard-icon">🍽️</div>
+      <div class="qcard-label">Refeições</div>
+      <div class="qcard-val">8</div>
+      <div class="qcard-sub">refeições no dia</div>
+    </div>
+    <div class="qcard" onclick="goTo('training')">
+      <div class="qcard-icon">🏋️</div>
+      <div class="qcard-label">Treino hoje</div>
+      <div class="qcard-val" id="home-train-val">—</div>
+      <div class="qcard-sub" id="home-train-sub">—</div>
+    </div>
+    <div class="qcard" onclick="goTo('macros')">
+      <div class="qcard-icon">⚡</div>
+      <div class="qcard-label">Superávit</div>
+      <div class="qcard-val">~11%</div>
+      <div class="qcard-sub">acima do TDEE</div>
+    </div>
+    <div class="qcard" onclick="goTo('training')">
+      <div class="qcard-icon">🏃</div>
+      <div class="qcard-label">Cardio</div>
+      <div class="qcard-val">2×</div>
+      <div class="qcard-sub">LISS 20–30 min</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ===== MEALS ===== -->
+<div class="screen" id="screen-meals">
+  <div class="sec-head">
+    <div class="sec-title">Refeições</div>
+  </div>
+  <div class="meals-scroll" id="meals-container"></div>
+</div>
+
+<!-- ===== TRAINING ===== -->
+<div class="screen" id="screen-training">
+  <div class="sec-head">
+    <div class="sec-title">Treinos</div>
+  </div>
+  <div class="train-screen-pad">
+    <div class="cardio-banner">
+      <div class="cardio-banner-head">
+        <div class="cardio-banner-icon">🏃</div>
+        <div class="cardio-banner-title">Cardio Semanal</div>
+      </div>
+      <div class="cardio-stats-row">
+        <div class="cs-box"><div class="cs-val">2×</div><div class="cs-lbl">sessões</div></div>
+        <div class="cs-box"><div class="cs-val">20–30</div><div class="cs-lbl">minutos</div></div>
+        <div class="cs-box"><div class="cs-val">LISS</div><div class="cs-lbl">tipo</div></div>
+      </div>
+      <div style="font-size:12px; color:rgba(255,255,255,0.35); margin-top:10px; line-height:1.5;">
+        Qui ou Dom · Caminhada rápida ou bike leve · Sem cardio intenso
+      </div>
+    </div>
+    <div id="training-container"></div>
+  </div>
+</div>
+
+<!-- ===== MACROS ===== -->
+<div class="screen" id="screen-macros">
+  <div class="sec-head">
+    <div class="sec-title">Macros</div>
+  </div>
+  <div class="macros-screen-pad">
+
+    <div class="big-kcal-card">
+      <div class="bk-num">2.760</div>
+      <div class="bk-unit">kcal por dia</div>
+      <div class="bk-surplus">Superávit ~10–13%</div>
+    </div>
+
+    <div class="macro-detail-card">
+      <div class="mdc-top">
+        <div class="mdc-left">
+          <div class="mdc-icon" style="background:rgba(61,220,132,0.1)">🥩</div>
+          <div>
+            <div class="mdc-name" style="color:var(--green)">Proteína</div>
+            <div class="mdc-sub">Recuperação muscular</div>
+          </div>
+        </div>
+        <div>
+          <div class="mdc-grams" style="color:var(--green)">139g</div>
+          <div class="mdc-kcal">556 kcal</div>
+        </div>
+      </div>
+      <div class="mdc-bar-track"><div class="mdc-bar-fill" style="width:20%; background:var(--green)"></div></div>
+      <div class="mdc-pct">20% das calorias · 2,2 g/kg</div>
+    </div>
+
+    <div class="macro-detail-card">
+      <div class="mdc-top">
+        <div class="mdc-left">
+          <div class="mdc-icon" style="background:rgba(245,197,66,0.1)">🍞</div>
+          <div>
+            <div class="mdc-name" style="color:var(--yellow)">Carboidratos</div>
+            <div class="mdc-sub">Combustível do treino</div>
+          </div>
+        </div>
+        <div>
+          <div class="mdc-grams" style="color:var(--yellow)">410g</div>
+          <div class="mdc-kcal">1.640 kcal</div>
+        </div>
+      </div>
+      <div class="mdc-bar-track"><div class="mdc-bar-fill" style="width:59%; background:var(--yellow)"></div></div>
+      <div class="mdc-pct">59% das calorias</div>
+    </div>
+
+    <div class="macro-detail-card">
+      <div class="mdc-top">
+        <div class="mdc-left">
+          <div class="mdc-icon" style="background:rgba(255,107,91,0.1)">🥑</div>
+          <div>
+            <div class="mdc-name" style="color:var(--red)">Gorduras</div>
+            <div class="mdc-sub">Equilíbrio hormonal</div>
+          </div>
+        </div>
+        <div>
+          <div class="mdc-grams" style="color:var(--red)">63g</div>
+          <div class="mdc-kcal">567 kcal</div>
+        </div>
+      </div>
+      <div class="mdc-bar-track"><div class="mdc-bar-fill" style="width:21%; background:var(--red)"></div></div>
+      <div class="mdc-pct">21% das calorias · 1,0 g/kg</div>
+    </div>
+
+    <div class="sec-head" style="padding-top:8px;">
+      <div class="sec-title" style="font-size:16px">Objetivos</div>
+    </div>
+
+    <div class="goal-cards">
+      <div class="gc"><div class="gc-emoji">💪</div><div class="gc-text">Ganho de massa muscular com superávit leve</div></div>
+      <div class="gc"><div class="gc-emoji">📉</div><div class="gc-text">Controle de gordura corporal durante o bulk</div></div>
+      <div class="gc"><div class="gc-emoji">⚡</div><div class="gc-text">Alta performance nos treinos com carbs elevados</div></div>
+      <div class="gc"><div class="gc-emoji">⚖️</div><div class="gc-text">Peso alvo: 67–72 kg nos próximos 3–4 meses</div></div>
+    </div>
+
+  </div>
+</div>
+```
+
+  </div>
+
+  <!-- BOTTOM NAV -->
+
+  <nav class="bottom-nav">
+    <button class="nav-btn active" id="nav-home" onclick="goTo('home')">
+      <div class="nav-icon">🏠</div>
+      <div class="nav-label">Início</div>
+    </button>
+    <button class="nav-btn" id="nav-meals" onclick="goTo('meals')">
+      <div class="nav-icon">🍽️</div>
+      <div class="nav-label">Refeições</div>
+    </button>
+    <button class="nav-btn" id="nav-training" onclick="goTo('training')">
+      <div class="nav-icon">🏋️</div>
+      <div class="nav-label">Treinos</div>
+    </button>
+    <button class="nav-btn" id="nav-macros" onclick="goTo('macros')">
+      <div class="nav-icon">📊</div>
+      <div class="nav-label">Macros</div>
+    </button>
+  </nav>
+</div>
+
+<script>
+// ---- DATA ----
+const MEALS_DATA = [
+  {
+    time: '06:40', emoji: '🌅', name: 'Acordar',
+    note: '💧 Tome 1 copo de água imediatamente',
+    foods: [], kcal: null
+  },
+  {
+    time: '07:00', emoji: '🥣', name: 'Café da Manhã',
+    foods: [
+      { name: 'Aveia', qty: '60 g' },
+      { name: 'Leite integral', qty: '250 ml' },
+      { name: 'Ovos mexidos', qty: '2 un' },
+      { name: 'Banana', qty: '1 un' },
+    ],
+    macros: { p: '28g P', c: '85g C', k: '~470 kcal' }, kcal: '~470'
+  },
+  {
+    time: '10:00', emoji: '🍞', name: 'Colação',
+    foods: [
+      { name: 'Pão de forma', qty: '2 fatias' },
+      { name: 'Ovo cozido', qty: '1 un' },
+      { name: 'Muçarela', qty: '30–40 g' },
+    ],
+    macros: { p: '18g P', c: '32g C', k: '~290 kcal' }, kcal: '~290'
+  },
+  {
+    time: '12:00', emoji: '🍛', name: 'Almoço · Pré-Treino',
+    foods: [
+      { name: 'Arroz cozido', qty: '200 g' },
+      { name: 'Carne / Frango', qty: '120–150 g' },
+      { name: 'Feijão', qty: '120 g' },
+      { name: 'Azeite de oliva', qty: '5 g' },
+    ],
+    macros: { p: '38g P', c: '110g C', k: '~660 kcal' }, kcal: '~660'
+  },
+  {
+    time: '13:30', emoji: '🏋️', name: 'TREINO',
+    note: '🔥 Sessão de musculação',
+    foods: [], kcal: null
+  },
+  {
+    time: '15:00', emoji: '🥤', name: 'Pós-Treino',
+    foods: [
+      { name: 'Leite integral', qty: '400 ml' },
+      { name: 'Whey protein', qty: '30 g' },
+      { name: 'Aveia', qty: '80 g' },
+      { name: 'Banana', qty: '1 un' },
+      { name: 'Pasta de amendoim', qty: '15 g' },
+      { name: 'Mel', qty: '10–15 g' },
+    ],
+    macros: { p: '45g P', c: '110g C', k: '~720 kcal' }, kcal: '~720'
+  },
+  {
+    time: '19:30', emoji: '🍽️', name: 'Jantar',
+    foods: [
+      { name: 'Proteína (rotativo)', qty: '150g ou 3 ovos' },
+      { name: 'Arroz cozido', qty: '150 g' },
+      { name: 'Feijão / legumes', qty: '100 g' },
+      { name: 'Legumes', qty: 'à vontade' },
+      { name: 'Azeite', qty: '5 g' },
+    ],
+    rotNote: '🔄 Músculo moído · Sardinha · Carne moída · 3 ovos',
+    macros: { p: '40g P', c: '80g C', k: '~520 kcal' }, kcal: '~520'
+  },
+  {
+    time: '22:30', emoji: '🌙', name: 'Ceia',
+    foods: [
+      { name: 'Leite integral', qty: '300 ml' },
+      { name: 'Banana', qty: '1 un' },
+      { name: 'Aveia', qty: '20 g' },
+    ],
+    macros: { p: '12g P', c: '48g C', k: '~280 kcal' }, kcal: '~280'
+  },
+];
+
+const TRAINING_DATA = [
+  { day: 'SEG', name: 'Pernas · Quadríceps', tags: ['Agachamento', 'Leg Press', 'Cadeira Ext.'], rest: false },
+  { day: 'TER', name: 'Costas + Bíceps', tags: ['Puxada', 'Remada', 'Rosca Direta'], rest: false },
+  { day: 'QUA', name: 'Ombro + Trap + Core', tags: ['Desenvolvimento', 'Elevações', 'Abdômen'], rest: false },
+  { day: 'QUI', name: 'Descanso', tags: [], rest: true },
+  { day: 'SEX', name: 'Pernas · Posterior', tags: ['Levantamento Terra', 'Mesa Flexora', 'Stiff'], rest: false },
+  { day: 'SÁB', name: 'Peito + Tríceps', tags: ['Supino Plano', 'Crucifixo', 'Tríceps Corda'], rest: false },
+  { day: 'DOM', name: 'Descanso', tags: [], rest: true },
+];
+
+const DAY_MAP = ['DOM', 'SEG', 'TER', 'QUA', 'QUI', 'SEX', 'SÁB'];
+
+// ---- INIT ----
+function getToday() {
+  const d = new Date();
+  const idx = d.getDay(); // 0=Sun
+  // TRAINING_DATA: 0=SEG(Mon)=1, 1=TER=2... map: DOM=0->idx6, SEG=1->idx0
+  const map = { 0: 6, 1: 0, 2: 1, 3: 2, 4: 3, 5: 4, 6: 5 };
+  return map[idx];
+}
+
+function updateHome() {
+  const h = new Date().getHours();
+  const greet = h < 12 ? 'Bom dia 👋' : h < 18 ? 'Boa tarde 👋' : 'Boa noite 👋';
+  document.getElementById('greeting').textContent = greet;
+
+  const tIdx = getToday();
+  const td = TRAINING_DATA[tIdx];
+  const jsDay = new Date().getDay();
+  const dayPT = ['Domingo','Segunda-feira','Terça-feira','Quarta-feira','Quinta-feira','Sexta-feira','Sábado'];
+  document.getElementById('today-day-name').textContent = dayPT[jsDay];
+  document.getElementById('today-day-type').textContent = td.rest ? 'Dia de descanso' : td.name;
+
+  const badge = document.getElementById('today-badge');
+  if (td.rest) {
+    badge.textContent = '😴 Descanso · Cardio leve opcional';
+    badge.style.background = 'rgba(90,95,120,0.2)';
+    badge.style.color = 'var(--muted2)';
+  } else {
+    badge.textContent = '🏋️ Dia de treino';
+    badge.style.background = 'rgba(61,220,132,0.15)';
+    badge.style.color = 'var(--green)';
+  }
+
+  const hTrainVal = document.getElementById('home-train-val');
+  const hTrainSub = document.getElementById('home-train-sub');
+  if (td.rest) {
+    hTrainVal.textContent = 'OFF';
+    hTrainSub.textContent = 'dia de descanso';
+  } else {
+    hTrainVal.textContent = td.day;
+    hTrainSub.textContent = td.name.split(' · ')[0] || td.name;
+  }
+}
+
+function renderMeals() {
+  const c = document.getElementById('meals-container');
+  c.innerHTML = '';
+
+  const now = new Date();
+  const nowMins = now.getHours() * 60 + now.getMinutes();
+
+  MEALS_DATA.forEach((m, i) => {
+    const [hh, mm] = m.time.split(':').map(Number);
+    const mealMins = hh * 60 + mm;
+    const isCurrent = Math.abs(mealMins - nowMins) < 90;
+
+    const div = document.createElement('div');
+    div.className = `meal-card ${isCurrent ? 'current' : ''}`;
+    div.style.animation = `fadeSlide 0.3s ease ${i * 0.04}s both`;
+
+    const foods = m.foods.map(f =>
+      `<div class="food-row"><span class="food-name">${f.name}</span><span class="food-qty">${f.qty}</span></div>`
+    ).join('');
+
+    const macros = m.macros ? `
+      <div class="meal-macros-row">
+        <div class="mac-tag mac-p">${m.macros.p}</div>
+        <div class="mac-tag mac-c">${m.macros.c}</div>
+        <div class="mac-tag mac-k">${m.macros.k}</div>
+      </div>` : '';
+
+    const note = m.note ? `<div style="padding:10px; background:rgba(61,220,132,0.07); border-radius:8px; font-size:13px; color:rgba(255,255,255,0.5); border:1px solid rgba(61,220,132,0.12)">${m.note}</div>` : '';
+    const rot = m.rotNote ? `<div class="rot-note">${m.rotNote}</div>` : '';
+
+    const hasContent = m.foods.length > 0 || m.note || m.rotNote;
+    const expandBtn = hasContent ? 'cursor:pointer' : 'cursor:default';
+
+    div.innerHTML = `
+      <div class="meal-top" style="${expandBtn}" onclick="toggleMeal(this)">
+        <div class="meal-emoji-wrap">${m.emoji}</div>
+        <div class="meal-info">
+          <div class="meal-time-tag">${m.time}</div>
+          <div class="meal-title">${m.name}</div>
+        </div>
+        ${m.kcal ? `<div class="meal-kcal-badge">${m.kcal} kcal</div>` : ''}
+      </div>
+      ${hasContent ? `<div class="meal-expand ${isCurrent ? 'open' : ''}">
+        ${foods}
+        ${rot}
+        ${note}
+        ${macros}
+      </div>` : ''}`;
+
+    c.appendChild(div);
+  });
+}
+
+function toggleMeal(el) {
+  const expand = el.nextElementSibling;
+  if (!expand) return;
+  expand.classList.toggle('open');
+}
+
+function renderTraining() {
+  const c = document.getElementById('training-container');
+  c.innerHTML = '';
+  const todayIdx = getToday();
+
+  TRAINING_DATA.forEach((t, i) => {
+    const isToday = i === todayIdx;
+    const div = document.createElement('div');
+    div.className = `day-card ${isToday ? 'today' : ''} ${t.rest ? 'rest-day' : ''}`;
+    div.style.animation = `fadeSlide 0.3s ease ${i * 0.04}s both`;
+
+    const tags = t.tags.map(tg => `<span class="dtag">${tg}</span>`).join('');
+    div.innerHTML = `
+      <div class="day-pill">
+        <div class="day-pill-name">${t.day}</div>
+        <div class="day-pill-type">${t.rest ? 'rest' : 'gym'}</div>
+      </div>
+      <div class="day-info">
+        <div class="day-type-label">${isToday ? '📍 HOJE · ' : ''}${t.rest ? 'Descanso' : 'Musculação'}</div>
+        <div class="day-name">${t.name}</div>
+        ${tags ? `<div class="day-tags">${tags}</div>` : ''}
+      </div>`;
+    c.appendChild(div);
+  });
+}
+
+// ---- NAV ----
+let currentScreen = 'home';
+
+function goTo(screen) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+
+  document.getElementById('screen-' + screen).classList.add('active');
+  document.getElementById('nav-' + screen).classList.add('active');
+  currentScreen = screen;
+
+  // scroll top
+  document.getElementById('screen-' + screen).scrollTop = 0;
+}
+
+// ---- BOOT ----
+updateHome();
+renderMeals();
+renderTraining();
+</script>
+
+</body>
+</html>
